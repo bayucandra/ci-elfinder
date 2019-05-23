@@ -1,0 +1,7 @@
+{
+    "require": {
+        "studio-42/elfinder": "^2.1",
+        "barryvdh/elfinder-flysystem-driver": "^0.2.1",
+        "league/flysystem-aws-s3-v3": "^1.0"
+    }
+}
