@@ -1,12 +1,13 @@
-#CodeIgniter elFinder with AWS S3 Connector
 
-##Prequesites
+# CodeIgniter elFinder with AWS S3 Connector
+
+## Prequesites
 
 * CI V3
 * Make sure CodeIgniter config $config['composer_autoload'] = TRUE;
 
 
-##Installation steps
+## Installation steps
 1. In directory `/application` do:
     * `composer require Studio-42/elFinder`,
     * `composer require barryvdh/elfinder-flysystem-driver`
@@ -19,7 +20,7 @@
        RewriteRule ^(.*)$ index.php/$1 [L]
     ```
 
-##CI Controller setup
+## CI Controller setup
 1. Don't forget to include:
     ```
     use Aws\S3\S3Client;
@@ -35,7 +36,7 @@
     * Inside `preCheck()` method, you can adjust max files upload individually and max volume of whole S3 path to have.
     
     
-##CI View setup/demo
+## CI View setup/demo
 Notes: Just demo, if you only need controller for another frontend part, you don't need this. Having `connector()` in your controller is enough
 1. Ensure `$config['base_url']` is set properly. This repo using following technique:
     ```
