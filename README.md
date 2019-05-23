@@ -4,7 +4,7 @@
 ## Prequesites
 
 * CI V3
-* Make sure CodeIgniter config $config['composer_autoload'] = TRUE;
+* Make sure CodeIgniter config `$config['composer_autoload'] = true;`
 
 
 ## Installation steps
