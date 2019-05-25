@@ -27,7 +27,7 @@ class Elfinder_lib extends CI_Controller {
             "secret" => "",
             "region" => "",
             "bucket" => "",
-            "prefix" => "",//prefix of listed images, it will be appended to your AWS bucket address. eg. "images" or "some/path/"
+            "prefix" => $_GET["folder"],//prefix of listed images, it will be appended to your AWS bucket address. eg. "images" or "some/path/"
             "version" => "latest",
             "acl" => 'public-read',
             "private-acl" => 'private',
